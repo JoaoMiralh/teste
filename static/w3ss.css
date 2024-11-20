@@ -1,0 +1,94 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 35%, #101422);
+    height: 100vh;
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background: linear-gradient(to bottom, #101422 75%, #1f2743);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form{
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #101422;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    width:100%;
+}
+
+.w3-row-padding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.w3-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.w3-input{
+    transform: all 0.3s ease;
+}
+
+.w3-input:hover{
+    transform: scale(1.05);
+    box-shadow: #3953b4 0px 0px 5px;
+    color: rgb(0, 0, 0);
+}
+
+.w3-input:focus{
+    transform: scale(1.05);
+    box-shadow: #101422 0px 0px 5px;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+
+.w3-bar{
+    background-color: #101422;
+    color: #ffffff;
+}
+
+.w3-bar-item{
+    color: #ffffff;
+    background-color: #272b3b;
+}
+
+.w3-button{
+    background-color: #272b3b;
+    color: #ffffff;
+}
+
+.w3-button:focus{
+    background-color: #101422;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #101422;
+    border: 1px solid #101422;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width:100%;
+}

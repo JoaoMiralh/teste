@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Cadastro de Alunos</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../static/w3ss.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1>Categorias</h1>
+    <!-- MENU -->
+    <header class="w3-bar">
+        <a href="../templates/index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+
+        <nav class="w3-dropdown-hover w3-mobile">  
+            <button class="w3-button">Cadastro</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                <a href="./alunos.html" class="w3-bar-item w3-button w3-mobile">Alunos</a>
+                <a href="./professores.html" class="w3-bar-item w3-button w3-mobile">Professores</a>
+                <a href="./autores.html" class="w3-bar-item w3-button w3-mobile">Autores</a>
+                <a href="categoria.html" class="w3-bar-item w3-button w3-mobile">Categorias</a>
+                <a href="./editoras.html" class="w3-bar-item w3-button w3-mobile">Editoras</a>
+                <a href="./livros.html" class="w3-bar-item w3-button w3-mobile">Livros</a>
+            </div>
+        </nav>
+
+        <nav class="w3-dropdown-hover w3-mobile">
+            <button class="w3-button">Emprestimo</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Emprestar</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Devolver</a>
+            </div>
+        </nav>
+
+        <nav class="w3-dropdown-hover w3-mobile">
+            <button class="w3-button">Relatórios</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Empréstimo</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile">Devoluções em atraso</a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- TELA DE CADASTRO -->
+    <section class="w3-container w3-light-gray">
+
+        <form class="w3-card-4 w3-light-white">
+            
+            <div class="w3-row">
+                <div class="w3-col w3-container m3 l3">
+                    <i class="material-icons">book</i>
+                    <label for="nome">Nome da categoria:</label>
+                    <input type="text" id="nome" class="w3-input w3-border w3-round" placeholder="Digite o nome da categoria:" required>
+                </div>
+
+                <div class="w3-col w3-container m3 l3">
+                    <i class="material-icons">code</i>
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" class="w3-input w3-border w3-round" placeholder="Digite o código da categoria" required>
+                </div>
+
+                <div class="w3-col w3-container m3 l3">
+                    <i class="material-icons">description</i>
+                    <label for="descricao">Descrição:</label>
+                    <textarea name="descricao" id="descricao" class="w3-input w3-border w3-round" placeholder="Digite aqui a descrição da categoria"></textarea>
+                </div>
+
+                <div class="w3-col w3-container m3 l3">
+                    <i class="material-icons">menu_book</i>
+                    <label for="subcategorias">Subcategorias:</label>
+                    <textarea name="descricao" id="subcategorias" class="w3-input w3-border w3-round" placeholder="Digite aqui as subcategorias"></textarea>
+                </div>
+
+                <div class="w3-col w3-container m3 l3">
+                    <i class="material-icons">check_circle</i>
+                    <label for="status">Status:</label>
+                    <input type="checkbox" id="status1" name="status1" value="Ativo" required>
+                    <label for="status1">Ativo</label>
+                    <input type="checkbox" id="status2" name="status2" value="Inativo" required>
+                    <label for="status2">Inativo</label>
+                </div>
+
+            </div>
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col w3-container m3 l3">
+                    <button class="w3-button w3-margin-top w3-round" type="submit" >Cadastrar</button>
+                    <button class="w3-button w3-gray-light w3-margin-top w3-round" type="submit">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 João Victor De Souza Miralha</p>
+    </footer>
+    
+</body>

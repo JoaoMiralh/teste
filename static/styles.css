@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header com Navegação Fixa */
+header {
+  background: #032b56;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #004080;
+  color: #fff;
+}
+
+/* Container Principal */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+/* Box de Conteúdo */
+.box-conteudo {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.box-conteudo:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #032b56;
+  margin-bottom: 10px;
+}
+
+/* Tabela de Habilidades */
+.minha-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.minha-tabela th,
+.minha-tabela td {
+  padding: 12px;
+  text-align: left;
+}
+
+.minha-tabela th {
+  background: #032b56;
+  color: #fff;
+}
+
+.minha-tabela tr {
+  background-color: #ffffff;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.minha-tabela tr:hover {
+  background: #e7f3ff;
+  color: #032b56;
+  transform: scale(1.02);
+}
+
+/* Artigos (Projetos) */
+article {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Formulário de Contato */
+form {
+  display: block;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #0056b3, #004080);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #004080, #003366);
+  transform: scale(1.05);
+}
+
+/* Redes Sociais */
+#redes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+#redes li {
+  display: flex;
+  align-items: center;
+}
+
+#redes a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#redes a:hover {
+  color: #007BFF;
+}
+
+#redes i {
+  margin-right: 8px;
+  color: #0056b3;
+  font-size: 20px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004080;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+  
